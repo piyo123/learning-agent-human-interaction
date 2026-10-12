@@ -2,7 +2,7 @@
 
 本リポジトリは AI エージェントが `Human-in-the-Loop` 時に人間とコミュニケーションする概念や手法を学習した履歴を残したものです。リポジトリの構成は次の通りです。
 
-## 01. MCP Elicitation
+## 01. [MCP Elicitation](01-mcp-elicitation/)
 
 Model Context Protocol (MCP) の [Elicitation](https://modelcontextprotocol.io/specification/2026-07-28/client/elicitation) の検証結果です。  
 Elicitation は MCP サーバーが処理に必要な情報を、MCP クライアントを介してユーザーに問い合わせるための仕組みです。  
