@@ -55,7 +55,7 @@ async def ask_delivery_method(item: str) -> Elicit[MyDeliveryMethod]:
 # Resolver - Takeout Details
 async def ask_takeout_details(
         delivery_method: Annotated[
-            MyTakeoutDetails,
+            MyDeliveryMethod,
             Resolve(ask_delivery_method),
         ]
 ) -> Elicit[MyTakeoutDetails] | MyTakeoutDetails:
@@ -73,7 +73,7 @@ async def ask_takeout_details(
 # Resolver - Delivery Details
 async def ask_delivery_details(
         delivery_method: Annotated[
-            MyDeliveryDetails,
+            MyDeliveryMethod,
             Resolve(ask_delivery_method),
         ]
 ) -> Elicit[MyDeliveryDetails] | MyDeliveryDetails:
@@ -95,9 +95,9 @@ async def ask_delivery_details(
 #             Resolve(ask_delivery_method),
 #         ],
 # ) -> Elicit[MyTakeoutDetails] | Elicit[MyDeliveryDetails] | Elicit[MyDeliveryMethod]:
-
+#
 #     print("** Resolver `ask_order_details` was called.\n")
-
+#
 #     if delivery_method.method == "takeout":
 #         return Elicit(
 #             "テイクアウトですね。もう少し教えてください。",
