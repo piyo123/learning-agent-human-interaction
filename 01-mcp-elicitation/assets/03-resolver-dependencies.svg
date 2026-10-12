@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="870" viewBox="0 0 1100 870" role="img" aria-labelledby="title desc">
+<title id="title">Resolver Dependencies</title><desc id="desc">Arrows show value dependencies, not network messages.</desc>
+<rect x="1" y="1" width="1098" height="868" fill="white" stroke="#dddddd"/>
+<text x="550" y="38.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="25" fill="#333333">Resolver Dependencies</text>
+<text x="550" y="70.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#666666">Arrows show value dependencies, not network messages.</text>
+<rect x="350" y="120" width="400" height="82" rx="3" fill="#eeeafa" stroke="#8f6ce8" stroke-width="1.3"/>
+<text x="550.0" y="147.35" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#333333">ask_delivery_method</text>
+<text x="550.0" y="174.65" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#333333">MyDeliveryMethod</text>
+<line x1="430" y1="202" x2="265" y2="299" stroke="#333333" stroke-width="1.7"/>
+<polygon points="265,299 277.87878084772854,297.2288410923408 272.8108630293526,288.608156143557" fill="#333333"/>
+<line x1="670" y1="202" x2="835" y2="299" stroke="#333333" stroke-width="1.7"/>
+<polygon points="835,299 827.1891369706474,288.608156143557 822.1212191522715,297.2288410923408" fill="#333333"/>
+<rect x="65" y="300" width="400" height="82" rx="3" fill="#eeeafa" stroke="#8f6ce8" stroke-width="1.3"/>
+<text x="265.0" y="327.35" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#333333">ask_takeout_details</text>
+<text x="265.0" y="354.65000000000003" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#333333">MyTakeoutDetails</text>
+<rect x="635" y="300" width="400" height="82" rx="3" fill="#eeeafa" stroke="#8f6ce8" stroke-width="1.3"/>
+<text x="835.0" y="327.35" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#333333">ask_delivery_details</text>
+<text x="835.0" y="354.65000000000003" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#333333">MyDeliveryDetails</text>
+<rect x="65" y="402" width="400" height="108" rx="0" fill="#fff7ae" stroke="#b6ad4b" stroke-width="1.3"/>
+<text x="265.0" y="431.3" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#333333">takeout: ask about a wet towel</text>
+<text x="265.0" y="456.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#333333">otherwise: towel = false</text>
+<text x="265.0" y="480.7" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#333333">without asking the user</text>
+<rect x="635" y="402" width="400" height="108" rx="0" fill="#fff7ae" stroke="#b6ad4b" stroke-width="1.3"/>
+<text x="835.0" y="431.3" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#333333">delivery: ask for a delivery date</text>
+<text x="835.0" y="456.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#333333">otherwise: date = empty string</text>
+<text x="835.0" y="480.7" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#333333">without asking the user</text>
+<line x1="265" y1="510" x2="430" y2="610" stroke="#333333" stroke-width="1.7"/>
+<polygon points="430,610 422.3291346018185,599.5043902491097 417.14611744088506,608.05636856465" fill="#333333"/>
+<line x1="835" y1="510" x2="670" y2="610" stroke="#333333" stroke-width="1.7"/>
+<polygon points="670,610 682.8538825591148,608.05636856465 677.6708653981815,599.5043902491097" fill="#333333"/>
+<line x1="550" y1="202" x2="550" y2="610" stroke="#333333" stroke-width="1.7"/>
+<polygon points="550,610 555.0,598.0 545.0,598.0" fill="#333333"/>
+<text x="602" y="550.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#333333">method</text>
+<rect x="350" y="612" width="400" height="84" rx="3" fill="#eeeafa" stroke="#8f6ce8" stroke-width="1.3"/>
+<text x="550.0" y="641.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#333333">order_item</text>
+<text x="550.0" y="667.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#333333">Runs after all dependencies resolve</text>
+<rect x="125" y="741" width="850" height="72" rx="0" fill="#fff7ae" stroke="#b6ad4b" stroke-width="1.3"/>
+<text x="550.0" y="764.65" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#333333">Both detail resolvers are evaluated once their dependency is available.</text>
+<text x="550.0" y="789.35" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#333333">On subsequent retries, all three resolver functions run again.</text>
+</svg>

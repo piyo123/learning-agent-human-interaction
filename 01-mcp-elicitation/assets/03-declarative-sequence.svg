@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1170" viewBox="0 0 1100 1170" role="img" aria-labelledby="title desc">
+<title id="title">Declarative Resolver: Two Input Rounds</title><desc id="desc">Same tool and original arguments on every retry | Takeout example</desc>
+<rect x="1" y="1" width="1098" height="1168" fill="white" stroke="#dddddd"/>
+<text x="550" y="38.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="25" fill="#333333">Declarative Resolver: Two Input Rounds</text>
+<text x="550" y="70.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#666666">Same tool and original arguments on every retry | Takeout example</text>
+<line x1="180" y1="165" x2="180" y2="1075" stroke="#8f6ce8" stroke-width="1.7"/>
+<rect x="80" y="105" width="200" height="60" rx="3" fill="#eeeafa" stroke="#8f6ce8" stroke-width="1.3"/>
+<text x="180.0" y="135.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#333333">Client</text>
+<rect x="80" y="1075" width="200" height="60" rx="3" fill="#eeeafa" stroke="#8f6ce8" stroke-width="1.3"/>
+<text x="180.0" y="1105.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#333333">Client</text>
+<line x1="870" y1="165" x2="870" y2="1075" stroke="#8f6ce8" stroke-width="1.7"/>
+<rect x="770" y="105" width="200" height="60" rx="3" fill="#eeeafa" stroke="#8f6ce8" stroke-width="1.3"/>
+<text x="870.0" y="135.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#333333">Server</text>
+<rect x="770" y="1075" width="200" height="60" rx="3" fill="#eeeafa" stroke="#8f6ce8" stroke-width="1.3"/>
+<text x="870.0" y="1105.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#333333">Server</text>
+<line x1="180" y1="208" x2="870" y2="208" stroke="#333333" stroke-width="1.7"/>
+<polygon points="870,208 858.0,203.0 858.0,213.0" fill="#333333"/>
+<text x="525" y="185.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#333333">tools/call #1 (id: 2): order_item(item)</text>
+<rect x="700" y="229" width="340" height="72" rx="0" fill="#fff7ae" stroke="#b6ad4b" stroke-width="1.3"/>
+<text x="870.0" y="253.3" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#333333">Run ask_delivery_method.</text>
+<text x="870.0" y="276.7" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#333333">Dependent resolvers wait.</text>
+<line x1="870" y1="345" x2="180" y2="345" stroke="#333333" stroke-width="1.7" stroke-dasharray="5 4"/>
+<polygon points="180,345 192.0,350.0 192.0,340.0" fill="#333333"/>
+<text x="525" y="322.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#333333">input_required: takeout or delivery?</text>
+<rect x="35" y="364" width="290" height="55" rx="0" fill="#fff7ae" stroke="#b6ad4b" stroke-width="1.3"/>
+<text x="180.0" y="391.5" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#333333">User selects takeout.</text>
+<line x1="180" y1="470" x2="870" y2="470" stroke="#333333" stroke-width="1.7"/>
+<polygon points="870,470 858.0,465.0 858.0,475.0" fill="#333333"/>
+<text x="525" y="447.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#333333">tools/call #2 (id: 3): method = takeout + state</text>
+<rect x="680" y="493" width="380" height="100" rx="0" fill="#fff7ae" stroke="#b6ad4b" stroke-width="1.3"/>
+<text x="870.0" y="519.6" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#333333">Re-run ask_delivery_method.</text>
+<text x="870.0" y="543.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#333333">Run both detail resolvers.</text>
+<text x="870.0" y="566.4" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#333333">Only takeout returns a question.</text>
+<line x1="870" y1="640" x2="180" y2="640" stroke="#333333" stroke-width="1.7" stroke-dasharray="5 4"/>
+<polygon points="180,640 192.0,645.0 192.0,635.0" fill="#333333"/>
+<text x="525" y="617.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#333333">input_required: want_a_wet_towel?</text>
+<rect x="35" y="660" width="290" height="55" rx="0" fill="#fff7ae" stroke="#b6ad4b" stroke-width="1.3"/>
+<text x="180.0" y="687.5" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#333333">User answers yes.</text>
+<line x1="180" y1="766" x2="870" y2="766" stroke="#333333" stroke-width="1.7"/>
+<polygon points="870,766 858.0,761.0 858.0,771.0" fill="#333333"/>
+<text x="525" y="743.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#333333">tools/call #3 (id: 4): towel = true + state</text>
+<rect x="680" y="791" width="380" height="111" rx="0" fill="#fff7ae" stroke="#b6ad4b" stroke-width="1.3"/>
+<text x="870.0" y="811.4" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#333333">Re-run all three resolvers.</text>
+<text x="870.0" y="834.8" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#333333">Reuse the recorded method.</text>
+<text x="870.0" y="858.1999999999999" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#333333">Resolve the towel answer.</text>
+<text x="870.0" y="881.6" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#333333">Execute order_item().</text>
+<line x1="870" y1="972" x2="180" y2="972" stroke="#333333" stroke-width="1.7" stroke-dasharray="5 4"/>
+<polygon points="180,972 192.0,977.0 192.0,967.0" fill="#333333"/>
+<text x="525" y="949.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#333333">complete: order summary</text>
+<text x="525" y="1025.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#666666">Delivery follows the same flow with delivery_date instead.</text>
+</svg>

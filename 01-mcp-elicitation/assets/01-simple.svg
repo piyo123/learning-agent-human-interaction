@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img" aria-labelledby="title desc">
+<title id="title">Simple Confirmation</title><desc id="desc">One Boolean field | One input round | Two tools/call requests</desc>
+<rect x="1" y="1" width="1098" height="848" fill="white" stroke="#dddddd"/>
+<text x="550" y="38.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="25" fill="#333333">Simple Confirmation</text>
+<text x="550" y="70.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#666666">One Boolean field | One input round | Two tools/call requests</text>
+<line x1="180" y1="165" x2="180" y2="755" stroke="#8f6ce8" stroke-width="1.7"/>
+<rect x="80" y="105" width="200" height="60" rx="3" fill="#eeeafa" stroke="#8f6ce8" stroke-width="1.3"/>
+<text x="180.0" y="135.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#333333">Client</text>
+<rect x="80" y="755" width="200" height="60" rx="3" fill="#eeeafa" stroke="#8f6ce8" stroke-width="1.3"/>
+<text x="180.0" y="785.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#333333">Client</text>
+<line x1="870" y1="165" x2="870" y2="755" stroke="#8f6ce8" stroke-width="1.7"/>
+<rect x="770" y="105" width="200" height="60" rx="3" fill="#eeeafa" stroke="#8f6ce8" stroke-width="1.3"/>
+<text x="870.0" y="135.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#333333">Server</text>
+<rect x="770" y="755" width="200" height="60" rx="3" fill="#eeeafa" stroke="#8f6ce8" stroke-width="1.3"/>
+<text x="870.0" y="785.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#333333">Server</text>
+<line x1="180" y1="212" x2="870" y2="212" stroke="#333333" stroke-width="1.7"/>
+<polygon points="870,212 858.0,207.0 858.0,217.0" fill="#333333"/>
+<text x="525" y="189.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#333333">tools/call #1: order_item(item)</text>
+<rect x="710" y="234" width="320" height="80" rx="0" fill="#fff7ae" stroke="#b6ad4b" stroke-width="1.3"/>
+<text x="870.0" y="262.95" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#333333">ask_confirmation()</text>
+<text x="870.0" y="285.05" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#333333">returns Elicit(..., MyConfirmation).</text>
+<line x1="870" y1="365" x2="180" y2="365" stroke="#333333" stroke-width="1.7" stroke-dasharray="5 4"/>
+<polygon points="180,365 192.0,370.0 192.0,360.0" fill="#333333"/>
+<text x="525" y="342.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#333333">input_required: confirm (boolean)</text>
+<rect x="25" y="385" width="310" height="78" rx="0" fill="#fff7ae" stroke="#b6ad4b" stroke-width="1.3"/>
+<text x="180.0" y="412.3" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#333333">User enters y or n.</text>
+<text x="180.0" y="435.7" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#333333">action = accept in both cases</text>
+<line x1="180" y1="515" x2="870" y2="515" stroke="#333333" stroke-width="1.7"/>
+<polygon points="870,515 858.0,510.0 858.0,520.0" fill="#333333"/>
+<text x="525" y="492.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#333333">tools/call #2: confirm = true / false + requestState</text>
+<rect x="700" y="538" width="340" height="82" rx="0" fill="#fff7ae" stroke="#b6ad4b" stroke-width="1.3"/>
+<text x="870.0" y="555.6" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#333333">Run the resolver again.</text>
+<text x="870.0" y="579.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#333333">Resolve the answer, then</text>
+<text x="870.0" y="602.4" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#333333">execute order_item().</text>
+<line x1="870" y1="698" x2="180" y2="698" stroke="#333333" stroke-width="1.7" stroke-dasharray="5 4"/>
+<polygon points="180,698 192.0,703.0 192.0,693.0" fill="#333333"/>
+<text x="525" y="675.0" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#333333">complete: Ordered / Order cancelled</text>
+</svg>
