@@ -5,6 +5,7 @@
 ## 01. MCP Elicitation
 
 Model Context Protocol (MCP) の [Elicitation](https://modelcontextprotocol.io/specification/2026-07-28/client/elicitation) の検証結果です。  
+MCP サーバーが処理に必要な情報を、MCP クライアントを介してユーザーに問い合わせるための仕組みです。  
 今回は Form Mode のみ検証しています。 MCP の Version 2026-07-28 を使用し、MCP Python SDK は version 2.3.0 を使用しています。  
 
 MCP の プロトコルバージョンについては[こちら](https://github.com/modelcontextprotocol/python-sdk/blob/main/docs/protocol-versions.md)に解説があります。  
