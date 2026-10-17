@@ -503,7 +503,7 @@ Outer iframe の `allow-same-origin` は Proxy のオリジンを保持するた
 
 実行結果は [ブラウザーのコンソールログ](06-security/browser-developer-tools-console.log.txt) と下記の動画をご参照ください。
 
-https://github.com/user-attachments/assets/fffde68e-72a4-4c9a-af3d-f430d8a2244c
+https://github.com/user-attachments/assets/bd1e06a4-fb75-4354-a4f8-6fc48c089adf
 
 ## 参考 URL
 
