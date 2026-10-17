@@ -300,7 +300,7 @@ sequenceDiagram
 
 実行結果は [ブラウザーのコンソールログ](04-tool-calling-from-app/browser-developer-tools-console.log.txt) と下記の動画をご参照ください。
 
-https://github.com/user-attachments/assets/7b72f061-eb27-4282-9c88-10097255ff1e
+[https://github.com/user-attachments/assets/7b72f061-eb27-4282-9c88-10097255ff1e](https://github.com/user-attachments/assets/62640fa2-1594-4147-8736-f70d114263e1)
 
 ## 05. Interactive UI
 
@@ -376,7 +376,7 @@ sequenceDiagram
 
 実行結果は [ブラウザーのコンソールログ](05-interactive-ui/browser-developer-tools-console.log.txt) と下記の動画をご参照ください。
 
-https://github.com/user-attachments/assets/ad110337-a1f7-4738-98bf-e17572287c50
+[https://github.com/user-attachments/assets/ad110337-a1f7-4738-98bf-e17572287c50](https://github.com/user-attachments/assets/7b72f061-eb27-4282-9c88-10097255ff1e)
 
 ## 06. Security
 
