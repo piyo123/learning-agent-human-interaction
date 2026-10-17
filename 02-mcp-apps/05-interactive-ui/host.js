@@ -15,8 +15,7 @@ async function main() {
         throw new Error(`HTTP ${response.status}`);
     }
 
-    const { html, toolResult } = await response.json();
-    console.log("[Host] Original toolResult:", JSON.stringify(toolResult, null, 2));
+    const { html } = await response.json();
 
     // iframe を取得
     // Get iframe element

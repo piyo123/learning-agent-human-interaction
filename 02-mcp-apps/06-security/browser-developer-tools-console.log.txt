@@ -1,0 +1,182 @@
+host.bundle.js:25740 [Host] Main started
+host.bundle.js:25742 [Host] Payload response: 200
+host.bundle.js:25778 [Host] Origin: http://localhost:8080
+host.bundle.js:25779 [Host] Location: http://localhost:8080/
+host.bundle.js:25828 [Host] Bridge connection started
+host.bundle.js:25830 [Host] Sandbox iframe URL assigned
+host.bundle.js:25832 [Host] Bridge connected
+sandbox.html:139 [Sandbox] Ready notification sent
+host.bundle.js:25785 [JSON-RPC Sandbox -> Host] {
+  "jsonrpc": "2.0",
+  "method": "ui/notifications/sandbox-proxy-ready",
+  "params": {}
+}
+host.bundle.js:25789 [Security] Message origin: http://localhost:8081
+host.bundle.js:25793 [Security] Source is Sandbox iframe: true
+host.bundle.js:25800 [Host] Sandbox Proxy is ready
+host.bundle.js:25772 [JSON-RPC Host -> Sandbox] {
+  "jsonrpc": "2.0",
+  "method": "ui/notifications/sandbox-resource-ready",
+  "params": {
+    "html": "[MCP App HTML omitted]",
+    "sandbox": "allow-scripts"
+  }
+}
+host.bundle.js:25805 [Host] Resource sent to Sandbox
+sandbox.html:60 [Sandbox] Resource received
+about:srcdoc:25797 [App] Origin: null
+about:srcdoc:25798 [App] Location: about:srcdoc
+sandbox.html:119 [Sandbox] App -> Host: {method: 'ui/initialize', params: {…}, jsonrpc: '2.0', id: 0}
+host.bundle.js:25785 [JSON-RPC Sandbox -> Host] {
+  "method": "ui/initialize",
+  "params": {
+    "appCapabilities": {},
+    "appInfo": {
+      "name": "Hello App",
+      "version": "1.0.0"
+    },
+    "protocolVersion": "2026-01-26"
+  },
+  "jsonrpc": "2.0",
+  "id": 0
+}
+host.bundle.js:25789 [Security] Message origin: http://localhost:8081
+host.bundle.js:25793 [Security] Source is Sandbox iframe: true
+host.bundle.js:25772 [JSON-RPC Host -> Sandbox] {
+  "result": {
+    "protocolVersion": "2026-01-26",
+    "hostCapabilities": {
+      "serverTools": {}
+    },
+    "hostInfo": {
+      "name": "My Host",
+      "version": "1.0.0"
+    },
+    "hostContext": {}
+  },
+  "jsonrpc": "2.0",
+  "id": 0
+}
+sandbox.html:81 [Sandbox] Host -> App: {result: {…}, jsonrpc: '2.0', id: 0}
+about:srcdoc:25804 [App] Connected
+about:srcdoc:25815 [App] Parent DOM access blocked: SecurityError Failed to read a named property 'document' from 'Window': Blocked a frame with origin "null" from accessing a cross-origin frame.
+main @ about:srcdoc:25815
+await in main
+(anonymous) @ about:srcdoc:25826
+(anonymous) @ about:srcdoc:25827
+sandbox.html:119 [Sandbox] App -> Host: {jsonrpc: '2.0', method: 'ui/notifications/initialized'}
+host.bundle.js:25785 [JSON-RPC Sandbox -> Host] {
+  "jsonrpc": "2.0",
+  "method": "ui/notifications/initialized"
+}
+host.bundle.js:25789 [Security] Message origin: http://localhost:8081
+host.bundle.js:25793 [Security] Source is Sandbox iframe: true
+host.bundle.js:25808 [Host] App initialized
+host.bundle.js:25772 [JSON-RPC Host -> Sandbox] {
+  "jsonrpc": "2.0",
+  "method": "ui/notifications/tool-input",
+  "params": {
+    "arguments": {}
+  }
+}
+sandbox.html:81 [Sandbox] Host -> App: {jsonrpc: '2.0', method: 'ui/notifications/tool-input', params: {…}}jsonrpc: "2.0"method: "ui/notifications/tool-input"params: arguments: [[Prototype]]: Object[[Prototype]]: Object[[Prototype]]: Object
+sandbox.html:119 [Sandbox] App -> Host: {jsonrpc: '2.0', method: 'ui/notifications/size-changed', params: {…}}jsonrpc: "2.0"method: "ui/notifications/size-changed"params: {width: 565, height: 211}[[Prototype]]: Object
+host.bundle.js:25785 [JSON-RPC Sandbox -> Host] {
+  "jsonrpc": "2.0",
+  "method": "ui/notifications/size-changed",
+  "params": {
+    "width": 565,
+    "height": 211
+  }
+}
+host.bundle.js:25789 [Security] Message origin: http://localhost:8081
+host.bundle.js:25793 [Security] Source is Sandbox iframe: true
+about:srcdoc:25758 [App] Tool input: {arguments: {…}}
+sandbox.html:119 [Sandbox] App -> Host: {method: 'tools/call', params: {…}, jsonrpc: '2.0', id: 1}id: 1jsonrpc: "2.0"method: "tools/call"params: arguments: name: "Kazuma"[[Prototype]]: Objectname: "say_hello"_meta: progressToken: 1[[Prototype]]: Object[[Prototype]]: Object[[Prototype]]: Object
+host.bundle.js:25785 [JSON-RPC Sandbox -> Host] {
+  "method": "tools/call",
+  "params": {
+    "name": "say_hello",
+    "arguments": {
+      "name": "Kazuma"
+    },
+    "_meta": {
+      "progressToken": 1
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": 1
+}
+host.bundle.js:25789 [Security] Message origin: http://localhost:8081
+host.bundle.js:25793 [Security] Source is Sandbox iframe: true
+host.bundle.js:25812 [Host] Tool call request: {_meta: {…}, name: 'say_hello', arguments: {…}}arguments: name: "Kazuma"[[Prototype]]: Objectname: "say_hello"_meta: progressToken: 1[[Prototype]]: Object[[Prototype]]: Object
+host.bundle.js:25824 [Host] Tool call response: {_meta: {…}, content: Array(1), structuredContent: {…}, isError: false, resultType: 'complete'}content: Array(1)0: {type: 'text', text: 'Hello Kazuma!'}length: 1[[Prototype]]: Array(0)isError: falseresultType: "complete"structuredContent: result: "Hello Kazuma!"[[Prototype]]: Object_meta: {io.modelcontextprotocol/serverInfo: {…}}[[Prototype]]: Object
+host.bundle.js:25772 [JSON-RPC Host -> Sandbox] {
+  "result": {
+    "_meta": {
+      "io.modelcontextprotocol/serverInfo": {
+        "name": "hello-mcp-app",
+        "version": ""
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Hello Kazuma!"
+      }
+    ],
+    "structuredContent": {
+      "result": "Hello Kazuma!"
+    },
+    "isError": false,
+    "resultType": "complete"
+  },
+  "jsonrpc": "2.0",
+  "id": 1
+}
+sandbox.html:81 [Sandbox] Host -> App: {result: {…}, jsonrpc: '2.0', id: 1}id: 1jsonrpc: "2.0"result: content: [{…}]isError: falseresultType: "complete"structuredContent: result: "Hello Kazuma!"[[Prototype]]: Object_meta: {io.modelcontextprotocol/serverInfo: {…}}[[Prototype]]: Object[[Prototype]]: Object
+about:srcdoc:25781 [App] Tool call response: {_meta: {…}, content: Array(1), structuredContent: {…}, isError: false}content: [{…}]isError: falsestructuredContent: {result: 'Hello Kazuma!'}_meta: io.modelcontextprotocol/serverInfo: name: "hello-mcp-app"version: ""[[Prototype]]: Object[[Prototype]]: Object[[Prototype]]: Object
+sandbox.html:119 [Sandbox] App -> Host: {method: 'tools/call', params: {…}, jsonrpc: '2.0', id: 2}
+host.bundle.js:25785 [JSON-RPC Sandbox -> Host] {
+  "method": "tools/call",
+  "params": {
+    "name": "say_hello",
+    "arguments": {
+      "name": "Jane"
+    },
+    "_meta": {
+      "progressToken": 2
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": 2
+}
+host.bundle.js:25789 [Security] Message origin: http://localhost:8081
+host.bundle.js:25793 [Security] Source is Sandbox iframe: true
+host.bundle.js:25812 [Host] Tool call request: {_meta: {…}, name: 'say_hello', arguments: {…}}
+host.bundle.js:25824 [Host] Tool call response: {_meta: {…}, content: Array(1), structuredContent: {…}, isError: false, resultType: 'complete'}
+host.bundle.js:25772 [JSON-RPC Host -> Sandbox] {
+  "result": {
+    "_meta": {
+      "io.modelcontextprotocol/serverInfo": {
+        "name": "hello-mcp-app",
+        "version": ""
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Hello Jane!"
+      }
+    ],
+    "structuredContent": {
+      "result": "Hello Jane!"
+    },
+    "isError": false,
+    "resultType": "complete"
+  },
+  "jsonrpc": "2.0",
+  "id": 2
+}
+sandbox.html:81 [Sandbox] Host -> App: {result: {…}, jsonrpc: '2.0', id: 2}
+about:srcdoc:25781 [App] Tool call response: {_meta: {…}, content: Array(1), structuredContent: {…}, isError: false}

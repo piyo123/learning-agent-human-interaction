@@ -25743,8 +25743,7 @@ container holding the app. Specify either width or maxWidth, and either height o
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`);
     }
-    const { html, toolResult } = await response.json();
-    console.log("[Host] Original toolResult:", JSON.stringify(toolResult, null, 2));
+    const { html } = await response.json();
     const iframe = document.getElementById("app-frame");
     const bridge = new MF(
       null,

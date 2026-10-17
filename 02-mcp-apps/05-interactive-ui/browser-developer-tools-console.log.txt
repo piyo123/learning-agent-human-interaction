@@ -1,0 +1,167 @@
+host.bundle.js:25740 [Host] Main started
+host.bundle.js:25742 [Host] Payload response: 200
+host.bundle.js:25779 [Host] Bridge connection started
+host.bundle.js:25781 [Host] iframe srcdoc assigned
+host.bundle.js:25783 [Host] Bridge connected
+host.bundle.js:25772 [JSON-RPC App -> Host] {
+  "method": "ui/initialize",
+  "params": {
+    "appCapabilities": {},
+    "appInfo": {
+      "name": "Hello App",
+      "version": "1.0.0"
+    },
+    "protocolVersion": "2026-01-26"
+  },
+  "jsonrpc": "2.0",
+  "id": 0
+}
+host.bundle.js:25764 [JSON-RPC Host -> App] {
+  "result": {
+    "protocolVersion": "2026-01-26",
+    "hostCapabilities": {
+      "serverTools": {}
+    },
+    "hostInfo": {
+      "name": "My Host",
+      "version": "1.0.0"
+    },
+    "hostContext": {}
+  },
+  "jsonrpc": "2.0",
+  "id": 0
+}
+about:srcdoc:25802 [App] Connected
+host.bundle.js:25772 [JSON-RPC App -> Host] {
+  "jsonrpc": "2.0",
+  "method": "ui/notifications/initialized"
+}
+host.bundle.js:25785 [Host] App initialized
+host.bundle.js:25764 [JSON-RPC Host -> App] {
+  "jsonrpc": "2.0",
+  "method": "ui/notifications/tool-input",
+  "params": {
+    "arguments": {}
+  }
+}
+about:srcdoc:25758 [App] Tool input: {arguments: {…}}
+host.bundle.js:25772 [JSON-RPC App -> Host] {
+  "method": "tools/call",
+  "params": {
+    "name": "say_hello",
+    "arguments": {
+      "name": "Kazuma"
+    },
+    "_meta": {
+      "progressToken": 1
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": 1
+}
+host.bundle.js:25789 [Host] Tool call request: {_meta: {…}, name: 'say_hello', arguments: {…}}arguments: name: "Kazuma"[[Prototype]]: Objectname: "say_hello"_meta: progressToken: 1[[Prototype]]: Object[[Prototype]]: Object
+host.bundle.js:25801 [Host] Tool call response: {_meta: {…}, content: Array(1), structuredContent: {…}, isError: false, resultType: 'complete'}content: Array(1)0: text: "Hello Kazuma!"type: "text"[[Prototype]]: Objectlength: 1[[Prototype]]: Array(0)isError: falseresultType: "complete"structuredContent: result: "Hello Kazuma!"[[Prototype]]: Object_meta: io.modelcontextprotocol/serverInfo: name: "hello-mcp-app"version: ""[[Prototype]]: Object[[Prototype]]: Object[[Prototype]]: Object
+host.bundle.js:25764 [JSON-RPC Host -> App] {
+  "result": {
+    "_meta": {
+      "io.modelcontextprotocol/serverInfo": {
+        "name": "hello-mcp-app",
+        "version": ""
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Hello Kazuma!"
+      }
+    ],
+    "structuredContent": {
+      "result": "Hello Kazuma!"
+    },
+    "isError": false,
+    "resultType": "complete"
+  },
+  "jsonrpc": "2.0",
+  "id": 1
+}
+about:srcdoc:25781 [App] Tool call response: {_meta: {…}, content: Array(1), structuredContent: {…}, isError: false}content: Array(1)0: text: "Hello Kazuma!"type: "text"[[Prototype]]: Objectlength: 1[[Prototype]]: Array(0)isError: falsestructuredContent: result: "Hello Kazuma!"[[Prototype]]: Object_meta: io.modelcontextprotocol/serverInfo: name: "hello-mcp-app"version: ""[[Prototype]]: Object[[Prototype]]: Object[[Prototype]]: Object
+host.bundle.js:25772 [JSON-RPC App -> Host] {
+  "method": "tools/call",
+  "params": {
+    "name": "say_hello",
+    "arguments": {
+      "name": "John"
+    },
+    "_meta": {
+      "progressToken": 2
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": 2
+}
+host.bundle.js:25789 [Host] Tool call request: {_meta: {…}, name: 'say_hello', arguments: {…}}arguments: name: "John"[[Prototype]]: Objectname: "say_hello"_meta: progressToken: 2[[Prototype]]: Object[[Prototype]]: Object
+host.bundle.js:25801 [Host] Tool call response: {_meta: {…}, content: Array(1), structuredContent: {…}, isError: false, resultType: 'complete'}content: Array(1)0: text: "Hello John!"type: "text"[[Prototype]]: Objectlength: 1[[Prototype]]: Array(0)isError: falseresultType: "complete"structuredContent: result: "Hello John!"[[Prototype]]: Object_meta: io.modelcontextprotocol/serverInfo: name: "hello-mcp-app"version: ""[[Prototype]]: Object[[Prototype]]: Object[[Prototype]]: Object
+host.bundle.js:25764 [JSON-RPC Host -> App] {
+  "result": {
+    "_meta": {
+      "io.modelcontextprotocol/serverInfo": {
+        "name": "hello-mcp-app",
+        "version": ""
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Hello John!"
+      }
+    ],
+    "structuredContent": {
+      "result": "Hello John!"
+    },
+    "isError": false,
+    "resultType": "complete"
+  },
+  "jsonrpc": "2.0",
+  "id": 2
+}
+about:srcdoc:25781 [App] Tool call response: {_meta: {…}, content: Array(1), structuredContent: {…}, isError: false}content: Array(1)0: text: "Hello John!"type: "text"[[Prototype]]: Objectlength: 1[[Prototype]]: Array(0)isError: falsestructuredContent: result: "Hello John!"[[Prototype]]: Object_meta: io.modelcontextprotocol/serverInfo: name: "hello-mcp-app"version: ""[[Prototype]]: Object[[Prototype]]: Object[[Prototype]]: Object
+host.bundle.js:25772 [JSON-RPC App -> Host] {
+  "method": "tools/call",
+  "params": {
+    "name": "say_hello",
+    "arguments": {
+      "name": "Jane"
+    },
+    "_meta": {
+      "progressToken": 3
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": 3
+}
+host.bundle.js:25789 [Host] Tool call request: {_meta: {…}, name: 'say_hello', arguments: {…}}arguments: name: "Jane"[[Prototype]]: Objectname: "say_hello"_meta: progressToken: 3[[Prototype]]: Object[[Prototype]]: Object
+host.bundle.js:25801 [Host] Tool call response: {_meta: {…}, content: Array(1), structuredContent: {…}, isError: false, resultType: 'complete'}content: Array(1)0: text: "Hello Jane!"type: "text"[[Prototype]]: Objectlength: 1[[Prototype]]: Array(0)isError: falseresultType: "complete"structuredContent: result: "Hello Jane!"[[Prototype]]: Object_meta: io.modelcontextprotocol/serverInfo: name: "hello-mcp-app"version: ""[[Prototype]]: Object[[Prototype]]: Object[[Prototype]]: Object
+host.bundle.js:25764 [JSON-RPC Host -> App] {
+  "result": {
+    "_meta": {
+      "io.modelcontextprotocol/serverInfo": {
+        "name": "hello-mcp-app",
+        "version": ""
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Hello Jane!"
+      }
+    ],
+    "structuredContent": {
+      "result": "Hello Jane!"
+    },
+    "isError": false,
+    "resultType": "complete"
+  },
+  "jsonrpc": "2.0",
+  "id": 3
+}
+about:srcdoc:25781 [App] Tool call response: {_meta: {…}, content: Array(1), structuredContent: {…}, isError: false}content: Array(1)0: {type: 'text', text: 'Hello Jane!'}length: 1[[Prototype]]: Array(0)isError: falsestructuredContent: result: "Hello Jane!"[[Prototype]]: Object_meta: io.modelcontextprotocol/serverInfo: name: "hello-mcp-app"version: ""[[Prototype]]: Object[[Prototype]]: Object[[Prototype]]: Object

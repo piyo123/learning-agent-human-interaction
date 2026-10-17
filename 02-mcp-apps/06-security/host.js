@@ -16,8 +16,7 @@ async function main() {
         throw new Error(`HTTP ${response.status}`);
     }
 
-    const { html, toolResult } = await response.json();
-    console.log("[Host] Original toolResult:", JSON.stringify(toolResult, null, 2));
+    const { html } = await response.json();
 
     // Sandbox Proxy 用 の iframe を取得
     // Get iframe element for Sandbox Proxy

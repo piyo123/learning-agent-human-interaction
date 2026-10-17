@@ -42,20 +42,8 @@ async def load_app():
         # 3. UI Resource から HTML を取得 / Read HTML from the UI Resource
         resource = await client.read_resource(resource_uri)
         html = resource.contents[0].text
-        #print("Resource:", resource) # js 入ってるので多い。
 
-        # 4. Toolを実行 / Execute the tool
-        result = await client.call_tool("say_hello", {})
-        print("Tool Result:", result.model_dump(mode="json"))
-
-        return {
-            "html": html,
-            "toolResult": result.model_dump(
-                mode="json",
-                by_alias=True,
-                exclude_none=True,
-            )
-        }
+        return { "html": html }
 
 # Host Web Root
 @app.get("/")
