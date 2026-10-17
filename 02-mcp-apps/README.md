@@ -10,7 +10,7 @@
 
 ## 03. Host-App Communication
 
-### 03-X. Architecture
+### 03-1. Architecture
 ```mermaid
 flowchart LR
     USER["👤 User"]
@@ -55,4 +55,14 @@ flowchart LR
     style SERVER fill:#ffffff,stroke:#15803d
 ```
 
+### 03-2. シーケンス図
+
+### 03-3. 観察できること
+
 ## 04. Tool Calling from App
+
+## 05. Interactive UI
+
+## 06. Security
+
+## 参考 URL
