@@ -1,0 +1,6 @@
+(.venv) PS C:\> python client.py
+Tool: say_hello
+Metadata: {'ui': {'resourceUri': 'ui://hello/app.html'}}
+Resource: meta={'io.modelcontextprotocol/serverInfo': {'name': 'hello-mcp-app', 'version': ''}} ttl_ms=0 cache_scope='private' contents=[TextResourceContents(uri='ui://hello/app.html', mime_type='text/html;profile=mcp-app', meta=None, text='<!DOCTYPE html>\n<html lang="ja">\n<head>\n    <meta charset="UTF-8">\n    <title>My First MCP App</title>\n</head>\n<body>\n    <h1>Hello, MCP Apps!</h1>\n    <p>My first MCP App UI.</p>\n</body>\n</html>\n')] result_type='complete'
+Result: [TextContent(type='text', text='Hello from MCP Server!', annotations=None, meta=None)]
+(.venv) PS C:\>

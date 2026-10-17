@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>MCP Sandbox Proxy</title>
+</head>
+<body>
+    <script>
+        const HOST_ORIGIN = "http://localhost:8080";
+        const SANDBOX_ORIGIN = "http://localhost:8081";
+
+        // Sandbox Proxy が指定したオリジンで動作しているか確認
+        // Verify that the Sandbox Proxy runs on its expected origin.
+        if (window.location.origin !== SANDBOX_ORIGIN) {
+            throw new Error("Unexpected Sandbox origin");
+        }
+
+        if (window.parent === window) {
+            throw new Error("Sandbox must run inside an iframe");
+        }
+
+        // MCP App を描画する inner iframe を作成
+        // Create an inner iframe to render the MCP App.
+        const inner = document.createElement("iframe");
+
+        // Inner iframe の境界を可視化
+        // Visualize the boundary of the inner iframe
+        inner.style.width = "100%";
+        inner.style.height = "300px";
+        inner.style.boxSizing = "border-box";
+        inner.style.border = "2px solid #2563eb";
+        inner.style.borderRadius = "6px";
+        document.body.appendChild(inner);
+
+        // Host と iframe 内の MCP App 間の JSON-RPC 通信を中継する
+        // Relay JSON-RPC messages between Host and App.
+        window.addEventListener("message", (event) => {
+
+            // Host からのメッセージの場合
+            // When receibed message was sent from Host
+            if (event.source === window.parent) {
+
+                // 指定したオリジンからのメッセージのみ受け付ける
+                // Accept messages only from the expected Host origin.
+                if (event.origin !== HOST_ORIGIN) {
+                    console.warn("[Sandbox] Rejected Host origin");
+                    return;
+                }
+
+                if ( event.data?.method === "ui/notifications/sandbox-resource-ready" ) {
+
+                    const html = event.data.params?.html;
+
+                    if (typeof html !== "string") {
+                        console.error("[Sandbox] Invalid HTML resource");
+                        return;
+                    }
+
+                    console.log("[Sandbox] Resource received");
+
+                    const sandbox = event.data.params?.sandbox;
+
+                    // Hostから要求されたSandbox属性を適用する。
+                    // ただし、この学習用 Host では allow-scripts のみ許可する。
+                    if (sandbox !== undefined && sandbox !== "allow-scripts") {
+                        console.error("[Sandbox] Unsupported sandbox permissions");
+                        return;
+                    }
+
+                    inner.setAttribute("sandbox", "allow-scripts");
+
+                    // Inner iframe に MCP App をロードする
+                    // Load the MCP App into the inner iframe.
+                    inner.srcdoc = html;
+                    return;
+                }
+
+                // Host -> App
+                if (event.data?.jsonrpc === "2.0") {
+                    console.log("[Sandbox] Host -> App:", event.data);
+
+                    // Opaque OriginのInner iframeへメッセージを転送
+                    // Forward message to the opaque-origin inner iframe
+                    inner.contentWindow.postMessage(
+                        event.data,
+                        "*"
+                    );
+                }
+
+            // MCP App からのメッセージの場合
+            // When receibed message was sent from MCP App
+            } else if (event.source === inner.contentWindow) {
+
+                // Inner iframe は Opaque Origin (値としては null)として動作する
+                // Inner iframe runs with an opaque origin
+                if (event.origin !== "null") {
+                    console.warn("[Sandbox] Rejected App origin:", event.origin);
+                    return;
+                }
+
+                if (
+                    event.data?.jsonrpc !== "2.0" ||
+                    event.data.method?.startsWith("ui/notifications/sandbox-")
+                ) {
+                    return;
+                }
+
+                // 見た目
+                if ( event.data?.method === "ui/notifications/size-changed" ) {
+                    const height = event.data.params?.height;
+
+                    if (Number.isFinite(height) && height > 0) {
+                        inner.style.height = `${Math.ceil(height)}px`;
+                    }
+                }
+
+                // App -> Host
+                console.log("[Sandbox] App -> Host:", event.data);
+
+                window.parent.postMessage(
+                    event.data,
+                    HOST_ORIGIN
+                );
+            }
+        });
+
+        // Host に Sandbox Proxy が準備完了であることを知らせる
+        // Notify Host that the Sandbox Proxy is ready.
+        window.parent.postMessage(
+            {
+                jsonrpc: "2.0",
+                method: "ui/notifications/sandbox-proxy-ready",
+                params: {}
+            },
+            HOST_ORIGIN
+        );
+
+        console.log("[Sandbox] Ready notification sent");
+    </script>
+</body>
+</html>
