@@ -224,11 +224,9 @@ sequenceDiagram
 
 ### 03-4. 実行結果
 
-実行結果は [動画（mcp_apps_02-03.mp4）](../assets/mcp_apps_02-03.mp4) をご参照ください。
+実行結果は下記の動画をご参照ください。
 
-<video src="https://github.com/piyo123/learning-agent-human-interaction/raw/refs/heads/main/assets/mcp_apps_02-03.mp4" controls preload="metadata" width="800"></video>
-
-[動画を開く（mcp_apps_02-03.mp4）](../assets/mcp_apps_02-03.mp4)
+https://github.com/user-attachments/assets/0ad41e1a-15d6-4563-8855-3376e9032ae7
 
 ## 04. Tool Calling from App
 
@@ -300,11 +298,9 @@ sequenceDiagram
 - 初期表示時の `/payload` は UI の HTML だけを返し、Tool は実行しません。Tool は「Say Hello」ボタンを押したときに実行し、App は `callServerTool()` の戻り値を使って結果を表示します。03で使用していた初回の Tool 呼び出しと `toolResult` の受け渡しは削除してあります。
 ### 04-4. 実行結果
 
-実行結果は [ブラウザーのコンソールログ](04-tool-calling-from-app/browser-developer-tools-console.log.txt) と [動画（mcp_apps_02-04.mp4）](../assets/mcp_apps_02-04.mp4) をご参照ください。
+実行結果は [ブラウザーのコンソールログ](04-tool-calling-from-app/browser-developer-tools-console.log.txt) と下記の動画をご参照ください。
 
-<video src="https://github.com/piyo123/learning-agent-human-interaction/raw/refs/heads/main/assets/mcp_apps_02-04.mp4" controls preload="metadata" width="800"></video>
-
-[動画を開く（mcp_apps_02-04.mp4）](../assets/mcp_apps_02-04.mp4)
+https://github.com/user-attachments/assets/7b72f061-eb27-4282-9c88-10097255ff1e
 
 ## 05. Interactive UI
 
@@ -378,11 +374,9 @@ sequenceDiagram
 
 ### 05-4. 実行結果
 
-実行結果は [ブラウザーのコンソールログ](05-interactive-ui/browser-developer-tools-console.log.txt) と [動画（mcp_apps_02-05.mp4）](../assets/mcp_apps_02-05.mp4) をご参照ください。
+実行結果は [ブラウザーのコンソールログ](05-interactive-ui/browser-developer-tools-console.log.txt) と下記の動画をご参照ください。
 
-<video src="https://github.com/piyo123/learning-agent-human-interaction/raw/refs/heads/main/assets/mcp_apps_02-05.mp4" controls preload="metadata" width="800"></video>
-
-[動画を開く（mcp_apps_02-05.mp4）](../assets/mcp_apps_02-05.mp4)
+https://github.com/user-attachments/assets/ad110337-a1f7-4738-98bf-e17572287c50
 
 ## 06. Security
 
@@ -507,11 +501,9 @@ Outer iframe の `allow-same-origin` は Proxy のオリジンを保持するた
 
 ### 06-4. 実行結果
 
-実行結果は [ブラウザーのコンソールログ](06-security/browser-developer-tools-console.log.txt) と [動画（mcp_apps_02-06.mp4）](../assets/mcp_apps_02-06.mp4) をご参照ください。
+実行結果は [ブラウザーのコンソールログ](06-security/browser-developer-tools-console.log.txt) と下記の動画をご参照ください。
 
-<video src="https://github.com/piyo123/learning-agent-human-interaction/raw/refs/heads/main/assets/mcp_apps_02-06.mp4" controls preload="metadata" width="800"></video>
-
-[動画を開く（mcp_apps_02-06.mp4）](../assets/mcp_apps_02-06.mp4)
+https://github.com/user-attachments/assets/fffde68e-72a4-4c9a-af3d-f430d8a2244c
 
 ## 参考 URL
 
